@@ -1,25 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,700');
+// --- ↓↓ Variables ↓↓ --------------------------------
+$header_h : 60px;
+// --- ↑↑ Variables ↑↑ --------------------------------
 
 body {
-    background-color: #2E9ce6;
-    padding: 3em;
+    background-color: tomato;
+    padding-top: $header_h;
     font-family: 'Raleway', 'Arial';
     color: #fff;
 }
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: center;
+    width: 100vw;
+    height: $header_h;
+    background-color: rgba(0,0,0,.2);
+    
+    &, nav, ul{
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav{
+        width: 100%;
+    }
+}
+
 ul{
     list-style-type: none;
     margin: 0 0 2em 0;
     padding: 0;
+
+    li{
+        display: inline;
+        margin: 0 15px;
+
+        a {
+            font-size: 1.5em;
+        }
+    }
 }
-ul li{
-    display: inline;
-    margin-right: 30px;
-}
-ul li a {
-    font-size: 1.5em;
-}
+
 a{
     color: #fff;
     text-decoration: none;

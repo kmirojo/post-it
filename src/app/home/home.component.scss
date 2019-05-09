@@ -1,15 +1,16 @@
 .container {
     display: grid;
     grid-template-columns: 50% auto;
+    max-width: 1024px;
 }
 .col {
     padding: .4em 1.3em;
 }
 .color-dark {
-    background-color: #2885c4;
+    background-color: #af1d03;
 }
 .color-light{
-    background-color: #57b3f1;
+    background-color: #f64d2f;
 }
 input.txt {
     border: 0;
@@ -21,13 +22,13 @@ input.btn{
     border: 0;
     display: block;
     padding: 1em 3em;
-    background-color: #A5F883;
+    background-color: yellow;
     color: #003a61;
     margin-bottom: 1em;
     cursor: pointer;
 }
 .life-container{
-    background-color: #3fa0e1;
+    background-color: tomato;
     padding: .5em;
     font-weight: bold;
     cursor: pointer;
