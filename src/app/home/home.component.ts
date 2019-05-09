@@ -33,7 +33,7 @@ import { trigger, style, transition, animate, keyframes, query, stagger } from '
 export class HomeComponent implements OnInit {
 
   itemCount: number; // Cantidad de Items
-  btnText: string = 'Add an Item';
+  btnText: string = 'Add a Post-It';
   goalText: string = 'My first life goal'; // Valor elemento a ingresar
   goals = []; // Arreglo de Elementos ingresados
   constructor() { }
