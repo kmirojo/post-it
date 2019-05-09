@@ -88,9 +88,9 @@ input {
         -webkit-filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.2)); /* Safari */
             filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.2));	
         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffa5+0,ffffa5+100&0+8,0+8,1+9,1+9,1+92 */
-        background: -moz-linear-gradient(45deg, rgba(255, 255, 165, 0) 0%, rgba(255, 255, 165, 0) 17px, #ffffa5 18px, #ffffa5 0, #ffffa5 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(45deg, rgba(255, 255, 165, 0) 0%, rgba(255, 255, 165, 0) 17px, #ffffa5 18px, #ffffa5 0, #ffffa5 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(45deg, rgba(255, 255, 165, 0) 0%, rgba(255, 255, 165, 0) 17px, #ffffa5 18px, #ffffa5 0, #ffffa5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        background: -moz-linear-gradient(45deg, rgba(255, 255, 165, 0) 0%, rgba(255, 255, 165, 0) 20px, #ffffa5 0px, #ffffa5 0, #ffffa5 100%);
+        background: -webkit-linear-gradient(45deg, rgba(255, 255, 165, 0) 0%, rgba(255, 255, 165, 0) 20px, #ffffa5 0px, #ffffa5 0, #ffffa5 100%);
+        background: linear-gradient(45deg, rgba(255, 255, 165, 0) 0%, rgba(255, 255, 165, 0) 20px, #ffffa5 0px, #ffffa5 0, #ffffa5 100%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffa5', endColorstr='#ffffa5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
         &:after{
             content: "";
