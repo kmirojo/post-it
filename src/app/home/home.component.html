@@ -8,7 +8,11 @@
 </div>
 <div class="container color-light" [@goals]="goals.length">
 	<div class="col left-col col-container">
-		<p class="sm">Use this form below to add a new <strong>Post-It</strong>, Is there something you need to remember?</p>
+		<p class="sm">
+			Use this form below to add a new 
+			<strong>Post-It</strong>
+			, Is there something you need to remember?
+		</p>
 
 		<form action="">
 			<input type="text" class="txt" name="item" placeholder="pending things ..." [(ngModel)]="goalText">
@@ -16,14 +20,12 @@
 		</form>
 	</div>
 	<div class="col flex col-container">
-		<div class="life-container postIt" *ngFor="let goal of goals; let i = index" (click)="removeItem(i)">
-				<!-- <div class="titulo">
-					Lorem ipsum
-				</div> -->
+		<div class="postIt-cont" *ngFor="let goal of goals; let i = index" (click)="removeItem(i)">
+			<div class="life-container postIt">
 				<div class="nota">
-					{{goal}}
-					<!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. -->
+					{{ goal }}
 				</div>
+			</div>
 		</div>
 	</div>
 </div>

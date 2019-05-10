@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, style, transition, animate, keyframes, query, stagger } from '@angular/animations';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-home',
@@ -36,10 +37,13 @@ export class HomeComponent implements OnInit {
   btnText: string = 'Add a Post-It';
   goalText: string = 'My first life goal'; // Valor elemento a ingresar
   goals = []; // Arreglo de Elementos ingresados
-  constructor() { }
+  constructor(private _data: DataService) { }
 
   ngOnInit() {
+    this._data.goal.subscribe(res => this.goals = res); // Traigo el valor del arreglo de data.service
+    // this._data.changeGoal(this.goals);
     this.itemCount = this.goals.length; // Asigna un valor a la cuenta de elementos
+
   }
 
   addItem(){
@@ -49,6 +53,8 @@ export class HomeComponent implements OnInit {
   }
 
   removeItem(i){
-    this.goals.splice(i, 1); // elimina el elemento en la posición (i)
+    this.goals.splice(i, 1); // Elimina el elemento en la posición (i)
+    // this._data.changeGoal(this.goals);
+    this.itemCount = this.goals.length; // Actualiza el valor de "itemCount" cuando se elimina un valor
   }
 }

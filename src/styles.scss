@@ -3,13 +3,20 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,700');
 // --- ↓↓ Variables ↓↓ --------------------------------
 $header_h : 60px;
+
+$main_color : #000;
+$secondary_color : #fff;
 // --- ↑↑ Variables ↑↑ --------------------------------
 
 body {
-    background-color: tomato;
+    background-color: $main_color;
     padding-top: $header_h;
     font-family: 'Raleway', 'Arial';
     color: #fff;
+}
+
+a{
+    cursor: pointer;
 }
 
 header {
@@ -19,7 +26,7 @@ header {
     align-items: center;
     width: 100vw;
     height: $header_h;
-    background-color: rgba(0,0,0,.2);
+    background-color: rgba($secondary_color, .15);
     
     &, nav, ul{
         display: flex;
@@ -38,7 +45,7 @@ ul{
     padding: 0;
 
     li{
-        display: inline;
+        // display: inline;
         margin: 0 15px;
 
         a {

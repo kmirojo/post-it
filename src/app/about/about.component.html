@@ -1,3 +1,17 @@
 <p>
-  about works!
+  About / 
+  <a (click)="sendMeHome()">
+    <strong>Back</strong>
+  </a>
 </p>
+
+<ul>
+  <li *ngFor="let goal of goals; let i = index">
+    <p>
+      <strong>
+        - My {{i + 1}}° Task: 
+      </strong> 
+      {{ goal }}.
+    </p>
+  </li>
+</ul>
